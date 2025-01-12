@@ -6,10 +6,75 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #4e4e4e;
   color: #333;
+  padding: 1.5rem;
+}
+
+a {
+  color: #f0a500;
+}
+
+.archdiv {
+  display: flex;
+  flex-direction: revert;
+  padding: 10px;
+}
+
+.content {
+  width: 70%;
+}
+
+.content h2 {
+  font-size: 1.2em;
+}
+
+body .title {
+  font-size: 3.5em;
+}
+
+.content ul {
+  margin-left: 20px;
+}
+
+.navbar {
+  /*background: #005650;*/
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  /*display: flex;*/
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navbar ul li a {
+  /*padding: 5px 10px;*/
+  /*display: block;*/
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a i {
+  margin-right: 0px;
+}
+
+/*.navbar ul li:last-child a {*/
+/*margin-left: 10px;*/
+/*}*/
+
+.navbar ul li a:hover {
+  color: var(--primary);
 }
 
 /* Hero section styles */
@@ -18,7 +83,6 @@ body {
   justify-content: center;
   align-items: center;
   /*height: 100vh;*/
-  background-color: #4e4e4e;
   color: white;
   text-align: center;
   padding: 20px;
@@ -55,7 +119,6 @@ body {
 }
 
 .hero-text a {
-  color: #f0a500;
   text-decoration: none;
   font-weight: bold;
 }
