@@ -19,16 +19,17 @@ body {
 /* Container to hold the images */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Adjusts the number of columns based on available space */
-  gap: 10px; /* Spacing between images */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjusts the number of columns based on available space */
+  row-gap: 10px; /* Spacing between images */
+  column-gap: 200px;
   padding: 10px; /* Padding around the grid */
 }
 
 /* Style for the individual images */
 img {
-  width: 60px; /* Width of each image */
-  height: 40px; /* Height of each image */
-  object-fit: cover; /* Ensures the images don't distort */
+  width: 300px; /* Width of each image */
+  height: 200px; /* Height of each image */
+  object-fit: cover;
 }
 
 
