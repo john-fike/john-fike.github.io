@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gav's Cattios | Custom Cat Patios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto Mono", monospace;
+        background-color: rgb(35, 36, 37);
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      a {
+        color: #f0a500;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        padding: 3rem 2rem 2rem;
+        border-bottom: 1px solid #444;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: #a3bd8d;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      header p.tagline {
+        color: #aaa;
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        color: #a3bd8d;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 0.4rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #ccc;
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .services-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .services-list li {
+        background: #2c2d2e;
+        border: 1px solid #3a3b3c;
+        border-radius: 6px;
+        padding: 1rem;
+        font-size: 0.85rem;
+        color: #ddd;
+      }
+
+      .services-list li .service-name {
+        color: #a3bd8d;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+
+      .contact-block {
+        background: #2c2d2e;
+        border: 1px solid #3a3b3c;
+        border-radius: 6px;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      .contact-block p {
+        margin-bottom: 0.4rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.75rem;
+        color: #555;
+        border-top: 1px solid #333;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+      }
+
+      .gallery img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 4px;
+        display: block;
+        image-orientation: from-image;
+      }
+
+      .featured-video {
+        width: 100%;
+        border-radius: 6px;
+        display: block;
+        background: #000;
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: 540px) {
+        .services-list {
+          grid-template-columns: 1fr;
+        }
+
+        header h1 {
+          font-size: 1.8rem;
+        }
+
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h1>Gav's Cattios</h1>
+        <p class="tagline">Custom cat patios &mdash; built for curious cats, trusted by their humans</p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>About</h2>
+        <p>
+          Gav's Cattios builds safe, beautiful outdoor enclosures so your cat
+          can enjoy fresh air without the risks of roaming free. Every cattio is
+          custom-built to fit your home and your cat's personality.
+        </p>
+        <p>
+          Family-owned and operated. We've been keeping cats happy and owners
+          worry-free since 2019.
+        </p>
+      </section>
+
+      <section>
+        <h2>Services</h2>
+        <ul class="services-list">
+          <li>
+            <span class="service-name">Window Box Cattio</span>
+            A compact enclosure that mounts right off your window. Perfect for apartments.
+          </li>
+          <li>
+            <span class="service-name">Deck / Patio Enclosure</span>
+            Full enclosure built around an existing deck or patio space.
+          </li>
+          <li>
+            <span class="service-name">Freestanding Catio</span>
+            A standalone structure in your yard, connected to the house via a tunnel.
+          </li>
+          <li>
+            <span class="service-name">Custom Tunnel Run</span>
+            Covered tunnels connecting your home to a catio or yard area.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Our Work</h2>
+        <video
+          class="featured-video"
+          src="images/cattio/IMG_8255.MOV"
+          controls
+          muted
+          playsinline
+        ></video>
+        <div class="gallery">
+          <img src="images/cattio/IMG_9017.jpeg" alt="Freestanding cattio exterior" />
+          <img src="images/cattio/IMG_9019.jpeg" alt="Cattio front view" />
+          <img src="images/cattio/IMG_9020.jpeg" alt="Cattio mesh wall with cats" />
+          <img src="images/cattio/IMG_9018.jpeg" alt="Interior shelves and scratching posts" />
+          <img src="images/cattio/IMG_8254.jpeg" alt="Cattio attached to house" />
+          <img src="images/cattio/IMG_8256.jpeg" alt="Cats using the enclosure" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Why a Cattio?</h2>
+        <p>Indoor cats live longer on average — but they still need enrichment and fresh air.</p>
+        <p>
+          A cattio gives your cat access to the outdoors safely: no cars, no
+          predators, no disappearing for three days. And they're a lot cheaper than
+          an emergency vet visit.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div class="contact-block">
+          <p>Phone: (555) 847-2291</p>
+          <p>Email: <a href="mailto:gav@gavcattios.com">gav@gavcattios.com</a></p>
+          <p>Serving the greater metro area &mdash; free estimates, no obligation.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Gav's Cattios &mdash; All rights reserved
+    </footer>
+  </body>
+</html>
